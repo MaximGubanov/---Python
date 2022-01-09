@@ -1,7 +1,8 @@
+import json
 import os
 from socket import AF_INET, SOCK_STREAM, socket
 import sys
-from utils import send_message, get_message
+from utils import send_message, get_message, load_cfg
 
 
 def parse_message(message):
@@ -18,6 +19,7 @@ def parse_message(message):
 
 
 def main():
+    load_cfg()
     global server_address, server_port
     try:
         if sys.argv[1] == '-a' and sys.argv[3] == '-p':
