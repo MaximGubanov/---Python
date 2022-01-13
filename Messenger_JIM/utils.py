@@ -30,4 +30,3 @@ def get_message(open_socket):
             return response_dict
         raise ValueError
     raise ValueError
-
