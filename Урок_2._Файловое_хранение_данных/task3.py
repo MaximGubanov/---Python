@@ -18,3 +18,4 @@ with open('file.yaml', 'w') as file_yaml:
 
 with open('file.yaml') as file_yaml:
     print(file_yaml.read())
+    
