@@ -11,9 +11,7 @@ def load_cfg():
     else:
         print(f'Файл \'{env.split(".")[1]}\' не существует')
 
-
 load_cfg()
-
 
 def send_message(open_socket, message):
     json_message = json.dumps(message)
