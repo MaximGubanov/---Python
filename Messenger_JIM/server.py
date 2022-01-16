@@ -4,10 +4,12 @@ import sys
 from utils import send_message, get_message, load_cfg
 import logging
 import log.server_log_config
+from log_decor import log
 
 logger = logging.getLogger('server')
 
 
+@log
 def parse_message(message):
     if os.getenv('ACTION') in message \
             and message[os.getenv('ACTION')] == os.getenv('PRESENCE') \

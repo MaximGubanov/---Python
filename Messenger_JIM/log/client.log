@@ -1,2 +1,22 @@
 2022-01-13 20:16:16,945 ERROR      client Ошибка в account_name -> ""
 2022-01-13 20:24:46,549 ERROR      client Ошибка в account_name -> "" - этот параметр не должен быть пустым
+2022-01-16 12:15:08,064 ERROR      client Ошибка в account_name -> "" - этот параметр не должен быть пустым
+2022-01-16 12:22:10,346 ERROR      client Ошибка в account_name -> "" - этот параметр не должен быть пустым
+2022-01-16 12:45:54,794 INFO       client Сервер запущен с параметрами: 127.0.0.1 8880
+2022-01-16 12:45:54,794 INFO       client Собщение создано успешно {'action': 'presence', 'time': 1642326354.7945468, 'max': {'account_name': 'Guest'}}
+2022-01-16 12:45:54,800 DEBUG      client Функция: create_presence_message. Параметры: ('Guest',), {}. Модуль: __main__. Вызов из функции main(). Вызов из функции main
+2022-01-16 12:45:54,812 INFO       client Ответ сервера: {'response': 200}
+2022-01-16 12:45:54,812 DEBUG      client Функция: parse_response. Параметры: ({'response': 200},), {}. Модуль: __main__. Вызов из функции main(). Вызов из функции main
+2022-01-16 12:45:54,812 INFO       client 200 : OK
+2022-01-16 12:50:11,145 INFO       client Сервер запущен с параметрами: 127.0.0.1 8880
+2022-01-16 12:50:11,146 INFO       client Собщение создано успешно {'action': 'presence', 'time': 1642326611.1462731, 'max': {'account_name': 'Guest'}}
+2022-01-16 12:50:11,152 DEBUG      client Функция: create_presence_message вызвана из функции main
+2022-01-16 12:50:11,161 INFO       client Ответ сервера: {'response': 200}
+2022-01-16 12:50:11,162 DEBUG      client Функция: parse_response вызвана из функции main
+2022-01-16 12:50:11,162 INFO       client 200 : OK
+2022-01-16 12:59:14,023 INFO       client Сервер запущен с параметрами: 127.0.0.1 8880
+2022-01-16 12:59:14,023 INFO       client Собщение создано успешно {'action': 'presence', 'time': 1642327154.0239096, 'max': {'account_name': 'Guest'}}
+2022-01-16 12:59:14,030 DEBUG      client Функция: create_presence_message вызвана из функции main
+2022-01-16 12:59:14,038 INFO       client Ответ сервера: {'response': 200}
+2022-01-16 12:59:14,039 DEBUG      client Функция: parse_response вызвана из функции main
+2022-01-16 12:59:14,039 INFO       client 200 : OK

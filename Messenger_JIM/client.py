@@ -5,10 +5,12 @@ from utils import send_message, get_message
 import time
 import logging
 import log.client_log_config
+from log_decor import log
 
 logger = logging.getLogger('client')
 
 
+@log
 def create_presence_message(account_name):
     if account_name:
         message = {
@@ -24,6 +26,7 @@ def create_presence_message(account_name):
         logger.error(f'Ошибка в account_name -> "{account_name}" - этот параметр не должен быть пустым')
 
 
+@log
 def parse_response(message):
     if os.getenv('RESPONSE') in message:
         if message[os.getenv('RESPONSE')] == 200:
@@ -46,7 +49,7 @@ def main():
 
     transport = socket(AF_INET, SOCK_STREAM)
     transport.connect((server_address, int(server_port)))
-    presence_message = create_presence_message('')
+    presence_message = create_presence_message('Guest')
     send_message(transport, presence_message)
     response = get_message(transport)
 
