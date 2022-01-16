@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 
 def load_cfg():
+
     env = os.path.join(os.path.dirname(__file__), '.env')
 
     if os.path.exists(env):
@@ -30,4 +31,3 @@ def get_message(open_socket):
             return response_dict
         raise ValueError
     raise ValueError
-
